@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title color="light">
+      Standortbestimmung
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div [class.hidden]="!showMap">
+      <div id="mapId"></div>
+    </div>
+    
+    <div class="button-container">
+      <ion-button class="locate-button" 
+                  color="dark"
+                  (click)="fetchLocation()">Standort bestimmen
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
